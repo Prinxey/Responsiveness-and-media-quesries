@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.firstpath{
+    color: white;
+    margin: auto;
+    width: 50%;
+    padding-left: 50px;
+    padding-bottom: 75%;
+}
+main{
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    padding: 100px 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.firstpath{
+    flex: 1;
+    margin-bottom: 60px;
+    margin-top: 800px;
+}
+.firstpath h1{
+    color: aliceblue;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.firstpath p{
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 25px;
+}
+.rightside{
+    flex: 1;
+}
+.rightside .advert{
+    background-color: hsl(248, 32%, 49%);
+    color: aliceblue;
+    padding: 13px 70px;
+    border-radius: 15px;
+    box-shadow: 0 5px hsla(249, 10%, 26%, 0.5);
+    margin-bottom: 40px;
+}
+.rightside .advert p{
+    font-size: 16px;
+}
+.rightside .advert p span{
+    font-weight: 600;
+}
+.rightside .form{
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px hsla(249, 10%, 26%, 0.5);
+}
+.logindetails{
+    position: relative;
+    margin-bottom: 15px;
+}
+.rightside input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding-left: 20px;
+    outline: none;
+    background-color: aliceblue;
+    color: hsla(249, 10%, 26%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px;
+}
+.rightside button[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    background-color: hsl(154, 59%, 51%);
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 3px hsla(154, 59%, 51%, 0.5);
+}
+.rightside input:focus{
+    border: 1.5px solid hsl(249, 10%, 26%);
+}
+.rightside input::placeholder{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.rightside .form-footer{
+    margin-top: 15px;
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    line-height: 20px;
+}
+.rightside .form-footer span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+.error-text, .error-icon{
+    display: none;
+}
+.logindetails.error .error-text, .logindetails.error .error-icon{
+    display: block;
+}
+.logindetails.error input{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+.error-icon{
+    position: absolute;
+    top: 20%;
+    right: 20px;
+}
+.error-text{
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 500;
+    color: hsl(0, 100%, 74%);
+}
+footer{
+    margin: 20px;
+    text-align: center;
+    color: hsl(249, 10%, 26%);
+    font-size: 14px;
+}
+@media only screen and (min-width: 920px){
+    .container{
+        flex-direction: row;
+        background-image: url('bg-intro-desktop.png');
+        max-width: 1200px;
+    }
+}
+.firstpath{
+    text-align: left;
+    padding-right: 70px;
+}
+.firstpath h1{
+    font-size: 50px;
+    line-height: 60px;
+}
+.firstpath p{
+    font-size: 16px;
+}
+.rightside{
+    max-width: 800px;
+}
+.rightside .advert p{
+    font-size: 14px;
+}
+.rightside .advert{
+    padding: 20px;
+}
+.rightside .form{
+    padding: 50px;
+}
+.rightside input::placeholder{
+    font-size: 14px;
+}
+.rightside .form-footer{
+    font-size: 10px;
+}
+footer{
+    font-size: 18px;
+}
+@import url('https://fonts.google.com/specimen/Poppins');
